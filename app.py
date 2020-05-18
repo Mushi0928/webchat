@@ -28,6 +28,6 @@ def on_join(data):
     emit('msg','weed',room=data)
     return
     
-
-print('run')
-socketio.run(app,debug=True,host="0.0.0.0")
+if __name__ == "__main__":
+    print('run')
+    socketio.run(app,debug=True,host="0.0.0.0")
