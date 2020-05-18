@@ -30,4 +30,4 @@ def on_join(data):
     
 
 print('run')
-socketio.run(app,debug=True)
+socketio.run(app,debug=True,host="0.0.0.0",port=80)
